@@ -2,6 +2,7 @@
   "name": "portfolioTemplate",
   "version": "2.0.0",
   "private": true,
+  "homepage": "https://dwivedikunal100.github.io/portfolio",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -22,9 +23,12 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "sass": "^1.54.5",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "gh-pages": "5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
